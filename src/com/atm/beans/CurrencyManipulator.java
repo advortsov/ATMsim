@@ -20,6 +20,13 @@ public class CurrencyManipulator {
         return currencyCode;
     }
 
+
+    /**
+     * Put denominations and count of bank notes in denominations map
+     *
+     * @param denomination bank note denomination (100 rub, 50$ etc.)
+     * @param count Count of bank notes inserting in ATM
+     */
     public void addAmount(int denomination, int count){
         if(denominations.containsKey(denomination)) // если уже есть банкнота такого достоинства
             denominations.put(denomination, denominations.get(denomination) + count); // прибавить к ней количество купюр
