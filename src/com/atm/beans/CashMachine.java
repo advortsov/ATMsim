@@ -2,14 +2,16 @@ package com.atm.beans;
 
 import com.atm.beans.exception.InterruptOperationException;
 import com.atm.beans.command.CommandExecutor;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * The main-class which starts the programm and define locale
+ */
 
 public class CashMachine {
 
-    public static final String RESOURCE_PATH = "com.javarush.test.level26.lesson15.big01.resources.";//12
+    public static final String RESOURCE_PATH = "com.atm.beans.resources.";//12
 
     public static void main(String[] args) {
 
